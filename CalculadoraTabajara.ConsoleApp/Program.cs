@@ -5,6 +5,7 @@ namespace CalculadoraTabajara.ConsoleApp
     class Program
     {
         //1º Deve realizar operações de adição
+        //2º Deve realizar operações de subtração
 
         static void Main(string[] args)
         {
@@ -21,6 +22,8 @@ namespace CalculadoraTabajara.ConsoleApp
                 Console.WriteLine("Tela Principal\n");
 
                 Console.WriteLine("Digite 1 para realizar operações de Adição\n");
+
+                Console.WriteLine("Digite 2 para realizar operações de Subtração\n");
 
                 Console.WriteLine("Digite S para sair\n");
 
@@ -43,6 +46,7 @@ namespace CalculadoraTabajara.ConsoleApp
                 switch (opcao)
                 {
                     case "1": operacao = "Adição"; break;
+                    case "2": operacao = "Subtração"; break;
 
                     default:
                         break;
@@ -63,6 +67,8 @@ namespace CalculadoraTabajara.ConsoleApp
                 switch (opcao)
                 {
                     case "1": resultado = primeiroNumero + segundoNumero; break;
+
+                    case "2": resultado = primeiroNumero - segundoNumero; break;
                         
                     default:
                         break;
